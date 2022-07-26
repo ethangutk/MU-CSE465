@@ -1,0 +1,32 @@
+==================================================
+Input: (define foo "bananas")
+
+--------------------------------------------------
+Tokens
+--------------------------------------------------
+LITERAL              : (
+ID                   : define
+ID                   : foo
+STRING               : "bananas"
+LITERAL              : )
+--------------------------------------------------
+Parse Tree
+--------------------------------------------------
+Program                                 
+  SExpr                                 
+    List                                
+      LITERAL                            (
+      Seq                               
+        SExpr                           
+          Atom                          
+            ID                           define
+        Seq                             
+          SExpr                         
+            Atom                        
+              ID                         foo
+          Seq                           
+            SExpr                       
+              Atom                      
+                STRING                   "bananas"
+      LITERAL                            )
+--------------------------------------------------

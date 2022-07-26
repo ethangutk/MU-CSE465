@@ -1,0 +1,20 @@
+ID             	z
+EQUALS         	=
+REAL           	3
+OP_PLUS        	+
+LPAREN         	(
+REAL           	4.3
+OP_MULTIPLY    	*
+REAL           	7
+OP_EXPONENT    	**
+REAL           	2
+OP_MINUS       	-
+REAL           	2
+RPAREN         	)
+ID             	z
+ID             	y
+EQUALS         	=
+REAL           	-3.141
+OP_MULTIPLY    	*
+ID             	z
+Invalid character '^' at line 3 column 13

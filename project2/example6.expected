@@ -1,0 +1,48 @@
+==================================================
+Input: (+ 3.14 (* 4 7))
+--------------------------------------------------
+Tokens
+--------------------------------------------------
+LITERAL              : (
+ID                   : +
+REAL                 : 3.14
+LITERAL              : (
+ID                   : *
+INT                  : 4
+INT                  : 7
+LITERAL              : )
+LITERAL              : )
+--------------------------------------------------
+Parse Tree
+--------------------------------------------------
+Program                                 
+  SExpr                                 
+    List                                
+      LITERAL                            (
+      Seq                               
+        SExpr                           
+          Atom                          
+            ID                           +
+        Seq                             
+          SExpr                         
+            Atom                        
+              REAL                       3.14
+          Seq                           
+            SExpr                       
+              List                      
+                LITERAL                  (
+                Seq                     
+                  SExpr                 
+                    Atom                
+                      ID                 *
+                  Seq                   
+                    SExpr               
+                      Atom              
+                        INT              4
+                    Seq                 
+                      SExpr             
+                        Atom            
+                          INT            7
+                LITERAL                  )
+      LITERAL                            )
+--------------------------------------------------

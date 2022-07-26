@@ -1,0 +1,20 @@
+ID                 z
+LITERAL            =
+NUM                3
+LITERAL            +
+LITERAL            (
+NUM                4.3
+LITERAL            *
+NUM                7
+LITERAL            **
+NUM                2
+LITERAL            -
+NUM                2
+LITERAL            )
+ID                 z
+ID                 y
+LITERAL            =
+NUM                -3.141
+LITERAL            *
+ID                 z
+Invalid character '^' at line 3 column 13

@@ -1,0 +1,31 @@
+==================================================
+Input: (define foo "Say \"Chease!\"")
+--------------------------------------------------
+Tokens
+--------------------------------------------------
+LITERAL              : (
+ID                   : define
+ID                   : foo
+STRING               : "Say \"Chease!\""
+LITERAL              : )
+--------------------------------------------------
+Parse Tree
+--------------------------------------------------
+Program                                 
+  SExpr                                 
+    List                                
+      LITERAL                            (
+      Seq                               
+        SExpr                           
+          Atom                          
+            ID                           define
+        Seq                             
+          SExpr                         
+            Atom                        
+              ID                         foo
+          Seq                           
+            SExpr                       
+              Atom                      
+                STRING                   "Say \"Chease!\""
+      LITERAL                            )
+--------------------------------------------------
